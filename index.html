@@ -7,6 +7,14 @@
         <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
         <title>Test</title>
         <script src = "js/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+	var cookieName = 'abc';
+var cookieValue = 'efghijklmn';
+var myDate = new Date();
+myDate.setMonth(myDate.getMonth() + 12);
+document.cookie = cookieName +"=" + cookieValue + ";expires=" + myDate 
+                  + ";domain=https://prod-ca-a.online.tableau.com";
+	</script>
         <style>
             /*兼容浏览器*/
             * {
@@ -229,12 +237,4 @@
             </div>
         </div>
     </body>
-	<script type="text/javascript">
-	var cookieName = 'HelloWorld';
-var cookieValue = 'kDa9gwktQ2KIAfhordWHVQ|CQsEh3NeFZV2jCjO5x0dSqIojhMP5VDK|e208ea91-6636-46a2-b128-3f98cda4f865';
-var myDate = new Date();
-myDate.setMonth(myDate.getMonth() + 12);
-document.cookie = cookieName +"=" + cookieValue + ";expires=" + myDate 
-                  + ";domain=https://prod-ca-a.online.tableau.com";
-	</script>
 </html>
