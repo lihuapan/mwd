@@ -13,6 +13,23 @@ var cookieValue = 'Xgj3ytwtQL6vTG56yumh4g|ka1KcA5yeA51igb3vTwsefPoeHwirFpH|e208e
 var myDate = new Date();
 document.cookie = cookieName +"=" + cookieValue + "path=/;SameSite=None;Secure";
 	</script>
+	    <script>
+	var url = "https://prod-ca-a.online.tableau.com/t/lihuatableau/views/SalesforceNonprofitCloudDonationsAdvanced/Cockpit?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fprod-ca-a.online.tableau.com%2F&:embed_code_version=3";
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+xhr.setRequestHeader("Cookie", "workgroup_session_id=TEKB_xpuTFiNs8Ut8fKh2w|ED2klQyIbIAHw6xJwLKZJmWcFSWHF1Vo|e208ea91-6636-46a2-b128-3f98cda4f865;JSESSIONID=222b2ef7467d6347;AWSELB=6D3183D70EAEFCB64F56AD2D25B407E343BFCEED9392BA6E60A41B3A01A131A05A97E23468FAC565C58CA97C5538BA5804E446A60EEE42738ECC4A972209A7756725F97AF9D979C3D13A6D6B1E13633A652E5E7759");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+xhr.send();
+
+	</script>
         <style>
             /*兼容浏览器*/
             * {
